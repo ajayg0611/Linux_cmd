@@ -1,0 +1,36 @@
+    1  bash
+    2  sudo
+    3  sudo -l
+    4  sudo su - ec2-user
+    5  pwd
+    6  ll
+    7  clear
+    8  pwd
+    9  mkdir ajay
+   10  cd ajay
+   11  pwd
+   12  ll
+   13  vi test.sh
+   14  ll
+   15  chmod +x test.sh 
+   16  ll
+   17  ./test.sh 
+   18  cd ~
+   19  pwd
+   20  ll
+   21  cd
+   22  yum install git -y
+   23  clear
+   24  ppwd
+   25  pwd
+   26  mkdir devops
+   27  ll
+   28  cd devops/
+   29  cd /opt/
+   30  ll
+   31  mkdir devops
+   32  ll
+   33  cd devops/
+   34  git init
+   35  git status
+   36  history > cmd.txt
