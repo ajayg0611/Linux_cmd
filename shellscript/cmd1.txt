@@ -1,0 +1,100 @@
+    1  bash
+    2  sudo
+    3  sudo -l
+    4  sudo su - ec2-user
+    5  pwd
+    6  ll
+    7  clear
+    8  pwd
+    9  mkdir ajay
+   10  cd ajay
+   11  pwd
+   12  ll
+   13  vi test.sh
+   14  ll
+   15  chmod +x test.sh 
+   16  ll
+   17  ./test.sh 
+   18  cd ~
+   19  pwd
+   20  ll
+   21  cd
+   22  yum install git -y
+   23  clear
+   24  ppwd
+   25  pwd
+   26  mkdir devops
+   27  ll
+   28  cd devops/
+   29  cd /opt/
+   30  ll
+   31  mkdir devops
+   32  ll
+   33  cd devops/
+   34  git init
+   35  git status
+   36  history > cmd.txt
+   37  ll
+   38  less cmd.txt 
+   39  git add cmd.txt 
+   40  git status
+   41  git commit -m"my first commit"
+   42  git remote add origin https://github.com/ajayg0611/Linux_cmd.git
+   43  git push -u origin master
+   44  mkdir shellscript
+   45  ll
+   46  clear
+   47  ll
+   48  cd shellscript/
+   49  ll
+   50  vi tardemo.sh
+   51  pwd
+   52  cd
+   53  ll
+   54  cd -
+   55  ll
+   56  chmod +x tardemo.sh 
+   57  ll
+   58  ./tardemo.sh 
+   59  ll
+   60  vi tardemo.sh
+   61  cd 
+   62  ll
+   63  cd /root/
+   64  ll
+   65  tar -czf ajay.tar *
+   66  ll
+   67  cd
+   68  ll
+   69  cd ..
+   70  ll
+   71  cd
+   72  ll
+   73  cd devops/
+   74  ll
+   75  git status
+   76  ll
+   77  pwd
+   78  cd ..
+   79  ll
+   80  git status
+   81  cd devops/
+   82  ll
+   83  l
+   84  ll
+   85  cd aj
+   86  cd ../ajay
+   87  ll
+   88  vi test.sh 
+   89  cd 
+   90  ll
+   91  cd /opt/
+   92  ll
+   93  cd devops/
+   94  ll
+   95  git status
+   96  ll
+   97  cd shellscript/
+   98  ll
+   99  git status
+  100  history >cmd1.txt
