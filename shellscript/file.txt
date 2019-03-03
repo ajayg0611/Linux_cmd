@@ -1,0 +1,146 @@
+-----------------------Redirection Error -------------------------------
+Name       FD   Description
+   stdin    0   standard input stream (e.g. keyboard)
+   stdout   1   standard output stream (e.g. monitor)
+   stderr   2   standard error output stream (usually also on monitor
+   
+   vi redirection.sh
+     # stdout from bash script to stderr
+     echo "Hello! Big Data @ Bash" 1>&2 
+     # stderr from bash script to /dev/null
+     # Note that there's no command called 'dates'
+
+     dates 2>&1  // This will display errors
+     dates 2>/dev/null // This will not display errors
+
+     # stderr and stdout to file
+     dates &> outfile.txt
+
+
+ Bash conditional statements
+
+Operator    Description
+-eq         Equal to
+-ne         Not equal to
+-gt         Greater than
+-ge         Greater than OR equal to
+-lt         less than
+-le         less than OR equal to
+
+     vi bash-ifelse.sh
+       #!/bin/bash
+
+       total=${1}
+       if [ $total -eq 1 ]; then
+         echo "the number is equal to 1"
+       else
+         echo "the number is NOT equal to 1"
+       fi
+    
+    bash bash-ifelse.sh
+
+
+
+
+Bash file test operators
+
+File Test   Operator Description
+-e           File exists (this could be regular file, directory, block device, character device, etc.,)
+-f           It’s a regular file (for example: /etc/shadow)
+-d           It’s a directory (for example: /var)
+-b           It’s a block device (for example:/dev/sdb)
+-c           It’s a character device (for example:/dev/tty2)
+-s           File is not empty
+-r           File read permission
+-w           File write permission
+-x           File execute permission
+-u           suid set on the file
+-g           sgid set on the file
+-k           Sticky bit set on the file
+-p           It’s a pipe
+-S           It’s a socket
+-h           It’s a symbolic link
+-t           Checks whether the given FD is opened in a terminal.
+-O           You own the file
+-G           File group id and my group id are the same.
+-N           Did the file got modified since last read?
+file-a -nt file-b   file-a is newer than file-b
+file-a -ot file-b   File1 is older than file2
+file-a -ef file-b   Both file1 and file2 are hard linked to the same file
+
+
+
+#!/bin/bash
+
+directory=$1
+
+# bash check if directory exists
+if [ -d $directory ]; then
+    echo "Directory exists!"
+else 
+    echo "Directory does not exists!"
+fi
+
+
+
+
+
+--------------Case Statement-------------------
+vi bash-case.sh
+
+#!/bin/bash
+echo "What is your scripting language? (0 = EXIT)"
+echo "1) bash"
+echo "2) perl"
+echo "3) phyton"
+echo "4) None of the above !"
+read case;
+
+case $case in
+    1) echo "You've selected bash!";;
+    2) echo "You've selected perl!";;
+    3) echo "You've selected phyton!";;
+    0) exit
+esac
+
+bash bash-case.sh
+
+
+
+
+
+
+
+--------------Bash for loop------------------------------
+Bash `loop` statements
+
+For loops allow repeated execution of a command sequence based on an iteration variable. Bash supports two kinds of for loop, a “list of values” and a “traditional” c-like method.
+
+for varname in list
+do
+    commands 
+done
+
+Note that
+
+1.  Bash for, in, do and done are keywords
+
+2.  list contains a list of items, which can be in the statement or fetched from a variable that contains several words separated by spaces.
+
+3.If list is missing from the for statement, then bash uses positional parameters that were passed into the shell.
+
+Example:
+
+vi bash-for-loop.sh
+
+#!/bin/bash
+i=1
+for day in Mon Tue Wed Thu Fri
+do
+echo "$(( i++ )) : $day"
+done
+
+
+bash bash-for-loop.sh
+
+
