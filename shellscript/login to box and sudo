@@ -1,0 +1,145 @@
+[ag3645@zltv0786 ~]$ cat test1.sh
+#!/bin/bash
+
+select=0
+
+        echo -e " Enter env name :\c "
+                                read env1
+                                `cd`
+
+#echo "0. Exit"
+echo "1. CSI"
+echo "2. BBO"
+echo "3. BFO"
+echo "4. GW"
+
+echo -n "Please select [ 1,2,3 or 4 ] : "
+
+# Loop while the variable 'select' is equal 0
+# bash while loop
+
+while [ $select -eq 0 ]; do
+
+# read user input
+read select
+if [ $select -eq 0 ]; then
+
+                echo -e "\n Enter Value greater than $select \n \n"
+                        echo "Please select between 1-4 !"
+echo "1. CSI"
+echo "2. BBO"
+echo "3. BFO"
+echo "4. GW"
+echo -n "Please select [1,2,3 or 4] : "
+                        select=0
+else
+# bash nested if/else
+if [ $select -eq 1 ] ; then
+
+                                echo "Select from below nodes "
+                                swmcli nodegroup listnodes -ng csi.m2e.$env1
+                                echo ""
+
+echo "Select from below nodes "
+                                swmcli nodegroup listnodes -ng csi.maf.$env1
+                                echo ""
+
+#echo "Select from below nodes "
+#                                swmcli nodegroup listnodes -ng csi.gw2.$env1
+#                                echo ""
+
+#echo "Select from below nodes "
+#                                swmcli nodegroup listnodes -ng bbo.m2e.$env1
+#                                echo ""
+
+#echo "Select from below nodes "
+#                                swmcli nodegroup listnodes -ng bfo.m2e.$env1
+#                                echo ""
+
+#echo "Select from below nodes "
+#                                swmcli nodegroup listnodes -ng csi.web.$env1
+#                                echo ""
+#                               swmcli nodegroup listnodes -ng csi.ppsvc.$env1
+#                              echo ""
+
+
+echo -e "Select Vtier : \c "
+
+read Vtier
+sudoto=`echo $Vtier|awk -F"." '{print $1}'|awk -F"-" '{print $3}'`
+echo $sudoto
+#sudo su - $sudoto
+
+ssh -t $Vtier " sudo su - $sudoto "
+hostname
+
+#user=$Vtier| awk -F"." '{print $1}'| awk -F"-" '{print $3}'
+#echo $user
+
+sudo su - $user
+
+
+#echo "2. BPM"
+#echo "3. BFO"
+#echo -e " login to service : \c "
+#read service
+# if [ $service -eq 1 ] ; then
+#echo "You have selected: CSI"
+#else
+#if [ $service -eq 2 ] ; then
+#echo "You have selected: BFO"
+#else
+#if  [ $service -eq 3 ] ; then
+#echo "You have selected: BBO"
+#else
+#echo "unknown string"
+#fi
+#fi
+#fi
+
+
+
+
+
+
+else
+
+        if [ $select -eq 2 ] ; then
+
+   #     echo -e " Enter env name :\c "
+    #                            read env1
+     #                           `cd`
+
+echo "Select from below nodes "
+                                swmcli nodegroup listnodes -ng bbo.m2e.$env1
+                                echo ""
+
+#                 echo "You have selected: null"
+        else
+
+     if [ $select -eq 3 ] ; then
+
+      #  echo -e " Enter env name :\c "
+       #                         read env1
+        #                        `cd`
+
+echo "Select from below nodes "
+                                swmcli nodegroup listnodes -ng bfo.m2e.$env1
+                                echo ""
+
+#                        echo "You have selected: Lime"
+                else
+                echo -e "\n Enter Value less than or eqaul to 3 \n \n"
+                        echo "Please select between 1-4 !"
+echo "1. CSI"
+echo "2. BBO"
+echo "3. BFO"
+echo "4. GW"
+echo -n "Please select [1,2,3 or 4] : "
+                        select=0
+                fi
+        fi
+fi
+fi
+done
+[ag3645@zltv0786 ~]$
