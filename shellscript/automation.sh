@@ -1,69 +1,8 @@
-------------------------Complex example of bash-------------------------
+# ------------------runevery-where.sh-----------------------
 #!/bin/bash
 
-select=0
-
-echo "1. Apple"
-echo "2. Oragne"
-echo "3. Lime"
-
-echo -n "Please select [1,2 or 3] : "
-
-# Loop while the variable 'select' is equal 0
-# bash while loop
-
-while [ $select -eq 0 ]; do
-
-# read user input
-read select
-
-# bash nested if/else
-if [ $select -eq 1 ] ; then
-
-        echo "You have selected: Apple"
-
-else
-
-        if [ $select -eq 2 ] ; then
-                 echo "You have selected: Orange"
-        else
-
-                if [ $select -eq 3 ] ; then
-                        echo "You have selected: Lime"
-                else
-                        echo "Please select between 1-3 !"
-                        echo "1. Apple"
-                        echo "2. Ornage"
-                        echo "3. Lime"
-                        echo -n "Please select [1,2 or 3] : "
-                        choice=0
-                fi
-        fi
-fi
-done
-
-  head unirank.csv
-  head -n 25 unirank.csv
-  apt install python3-csvkit
-  head  unirank.csv | csvlook
-  head -n 25 unirank.csv | csvlook
-  grep -i "college" unirank.csv | csvlook
-  wc -l unirank.csv
-  grep -i "college" unirank.csv | wc -l
-  grep "CA" unirank.csv | csvlook
-
-
-
- cat unirank.csv | cut -f4,6 -d, > udata.csv
- sudo pip install bashplotlib
- cat udata.csv| tail -n +2 | scatter
- 
- 
- ------------------runevery-where.sh-----------------------
- #!/bin/bash
-
 # A list of servers, one per line.
-SERVER_LIST='/vagrant/servers'
+SERVER_LIST='/opt/SERVERS'
 
 # Options for the ssh command.
 SSH_OPTIONS='-o ConnectTimeout=2'
@@ -80,7 +19,7 @@ usage() {
 }
 
 # Make sure the script is not being executed with superuser privileges.
-if [[ "${UID}" -eq 0 ]]
+if [[ "${UID}" -eq 1 ]]
 then
   echo 'Do not execute this script as root. Use the -s option instead.' >&2
   usage
