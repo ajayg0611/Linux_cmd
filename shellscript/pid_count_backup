@@ -4,13 +4,6 @@
 
 PROC_NAME="${1}"
 server_name="${2}"
-ping -c 1 ${server_name} &> /dev/null
-if [[ "${?}" -ne 0 ]]
-then
-  echo "server  ${server_name} is down " >&2
-  exit 1
-fi
-
 PIDS=$(ssh ${server_name} pidof ${PROC_NAME})
 COUNT=$(echo $PIDS | wc -w)
 

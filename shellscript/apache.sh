@@ -8,14 +8,14 @@
 
 usage() {
   # Display the usage and exit.
-  echo "Usage: ${0} HOST [HOSTN...]" >&2
+  echo "Usage: ${0} HOST [HOSTN...]" >& 2
   exit 1
 }
 
 # Make sure the script is not being executed with superuser privileges.
 if [[ "${UID}" -eq 1 ]]
 then
-  echo 'Do not execute this script as root.' >&2
+  echo 'Do not execute this script as root.' >& 2
   usage
 fi
 
@@ -44,7 +44,7 @@ do
   fi
 
   # Install the httpd package
-  ssh ${SERVER} sudo yum install -y httpd
+  ssh ${SERVER} sudo apt install -y apache2 &> apache.log
 
   # Create an index.html file.
   ssh ${SERVER} 'echo "${HOSTNAME}" | sudo tee /var/www/html/index.html >/dev/null'

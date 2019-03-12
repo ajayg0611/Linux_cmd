@@ -2,7 +2,7 @@
 #!/bin/bash
 
 # A list of servers, one per line.
-SERVER_LIST='/opt/SERVERS'
+SERVER_LIST='/root/data/shellscript/SERVERS'
 
 # Options for the ssh command.
 SSH_OPTIONS='-o ConnectTimeout=2'

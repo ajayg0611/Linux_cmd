@@ -3,7 +3,7 @@
 
 #This Script will ping list of servers and list the status
 
-SERVER_FILE="/opt/SERVERS"
+SERVER_FILE="/root/data/shellscript/SERVERS"
 
 if [[ ! -e "${SERVER_FILE}" ]]
 then
