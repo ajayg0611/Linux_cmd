@@ -1,0 +1,798 @@
+    1  clear
+    2  git init
+    3  apt install git
+    4  clear
+    5  apt-get update
+    6  apt-get install -y docker.io
+    7  apt-get update && apt-get install -y apt-transport-https curl
+    8  curl -s https://packages.cloud.google.com/apt/doc/apt-key.gpg | apt-key add -
+    9  cat << EOF>>/etc/apt/sources.list.d/kubernetes.list deb http://apt.kubernetes.io/kubernetes-xenial main EOF
+   10  cat << EOF>>/etc/apt/sources.list.d/kubernetes.list
+   11  apt-get update
+   12  vi /etc/apt/sources.list.d/kubernetes.list 
+   13  apt-get update
+   14  apt-get install -y kubelet kubeadm kubectl
+   15  vi /etc/apt/sources.list.d/kubernetes.list 
+   16  apt-get install -y kubelet kubeadm kubectl
+   17  kubelet
+   18  snap install kubelet
+   19  snap install kubelet --classic
+   20  kubeadm
+   21  apt install kubeadm
+   22  snap install kubeadm
+   23  snap install kubeadm --classic
+   24  kubectl
+   25  snap install kubectl
+   26  snap install kubectl --classic
+   27  clear
+   28  apt-get install -y kubelet kubeadm kubectl
+   29  vim /etc/systemd/system/
+   30  cd /etc/systemd/system
+   31  ll
+   32  vi snap.kubelet.daemon.service
+   33  clear
+   34  ifconfig
+   35  docker
+   36  docker stop
+   37  docker image
+   38  docker image history
+   39  docker image pull
+   40  ll
+   41  cd
+   42  clear
+   43  ll
+   44  cd /opt/devops/
+   45  docker image pull
+   46  docker image pull --help
+   47  docker image pull -a
+   48  clear
+   49  sudo docker run hello-world
+   50  sudo docker ps -a
+   51  sudo docker start nostalgic_hopper
+   52  sudo docker ps -a
+   53  sudo docker start nostalgic_hopper
+   54  docker pull nginx
+   55  docker run --name docker-nginx -p 80:80 nginx
+   56  kubectl
+   57  apt install openjdk-11-jre-headless
+   58  apt install default-jre   kubectl
+   59  clear
+   60  apt -get-update
+   61  apt-get update
+   62  clear
+   63  swapoff -a
+   64  nano /etc/fstab 
+   65  vim /etc/hostname 
+   66  clear
+   67  ifconfig
+   68  apt install net-tools
+   69  ifconfig
+   70  netstat -a |grep 
+   71  netstat -a |grep 22
+   72  clear
+   73  cd 
+   74  ls -al
+   75  cd
+   76  ll
+   77  cd .ssh
+   78  clear
+   79  ssh
+   80  ifconfig
+   81  vim /etc/hostname 
+   82  sudo apt-get install openssh-server
+   83  sudo su
+   84  whcih bash
+   85  clear
+   86  which bash
+   87  which java
+   88  who
+   89  id
+   90  sudo -l
+   91  ip
+   92  hostname
+   93  hostname -a
+   94  hostname -l
+   95  hostname -i
+   96  hostname -a
+   97  hostname -i
+   98  clear
+   99  ll
+  100  clear
+  101  cd
+  102  cd -
+  103  pwd
+  104  vim ajay.sh
+  105  apt install vim  
+  106  clear
+  107  vim ajay.sh
+  108  rm ajay.sh 
+  109  clear
+  110  ll
+  111  clear
+  112  ll
+  113  ./whileloop.sh 
+  114  1
+  115  ./whileloop.sh 
+  116  2
+  117  clear
+  118  man
+  119  clear
+  120  man cut
+  121  man awk
+  122  vlesr
+  123  clear
+  124  ssh
+  125  ssh -o
+  126  man ssh
+  127  clear
+  128  git init
+  129  git status
+  130  clear
+  131  cd ..
+  132  ll
+  133  clear
+  134  curl
+  135  apt install curl
+  136  curl www.google.com
+  137  clear
+  138  docker
+  139  snap install docker
+  140  docker
+  141  clear
+  142  ps -ef |grep docker
+  143  clear
+  144  docker
+  145  docker start
+  146  docker version
+  147  ifconfig
+  148  apt-get update && apt-get install -y apt-transport-https curl
+  149  clear
+  150  docker ps -a
+  151  docker rm docker-nginx
+  152  docker run --name docker-nginx -p 80:80 -d nginx
+  153  docker run --name docker-nginx-1 -p 80:80 -d nginx
+  154  docker run --name docker-nginx-1 -p 81:81 -d nginx
+  155  docker ps -a
+  156  docker run --name docker-nginx-2 -p 81:81 -d nginx
+  157  docker ps -a
+  158  docker stop docker-nginx
+  159  docker stop docker-nginx-1
+  160  docker stop docker-nginx-2
+  161  docker ps -a
+  162  docker rm docker-nginx-1
+  163  docker ps -a
+  164  docker stop docker-nginx-2
+  165  docker stop docker-nginx
+  166  docket 
+  167  docket
+  168  docker
+  169  docker stop
+  170  docker stop ocker-nginx
+  171  docker stop docker-nginx
+  172  docker restart docker-nginx
+  173  docker swarn
+  174  docker logout
+  175  clear
+  176  ps -ef |grep docker
+  177  kill -9 [6~
+  178  clear
+  179  ps -ef |grep docker
+  180  kill -9 10376
+  181  ps -ef |grep docker
+  182  clea
+  183  ps -ef |grep docker
+  184  kill -9 18133
+  185  kill 18179
+  186  clear
+  187  ps -ef |grep docker
+  188  kill -9 18673
+  189  kill -9 19193
+  190  kill -9 19248
+  191  ps -ef |grep docker
+  192  clear
+  193  ps -ef |grep docker
+  194  docker ps -a
+  195  clear
+  196  exit 0
+  197  cd
+  198  cd ..
+  199  ll
+  200  clear
+  201  cd /opt
+  202  ll
+  203  nkdir devops
+  204  clear
+  205  mkdir devops
+  206  clear
+  207  cd devops/
+  208  ll
+  209  clear
+  210  git init
+  211  git status
+  212  git clone https://github.com/ajayg0611/Linux_cmd.git
+  213  git status
+  214  git pull
+  215  git pull origin master
+  216  git pull https://github.com/ajayg0611/Linux_cmd.git master
+  217  ll
+  218  cd shellscript/
+  219  ll
+  220  vi automation.sh
+  221  clear
+  222  svn status
+  223  clear
+  224  git status
+  225  svn add *
+  226  git add *
+  227  git status
+  228  git commit -m "updated automation.sh"
+  229  git status
+  230  git push https://github.com/ajayg0611/Linux_cmd.git master
+  231  clear
+  232  git status
+  233  clear
+  234  UID
+  235  id
+  236  clear
+  237  id -d
+  238  clear
+  239  id
+  240  id man
+  241  man id
+  242  id -l
+  243  id -g
+  244  clear
+  245  id -g
+  246  clear
+  247  id -g
+  248  alias UID='id -g'
+  249  UID
+  250  ls -al automation.sh 
+  251  chmod +x automation.sh 
+  252  ./automation.sh 
+  253  csvlook
+  254  apt install csvkit
+  255  clear
+  256  csvlook
+  257  ll
+  258  clear
+  259  grep -i college csv.txt | csvlook
+  260  head -n 25 csv.txt | csvlook
+  261  ./automation.sh 
+  262  ./automation.sh -s -f csv.txt pwd
+  263  ./automation.sh -s 
+  264  ./automation.sh -s
+  265  ./automation.sh -n
+  266  clesr
+  267  clear
+  268  lib
+  269  clear
+  270  python
+  271  clear
+  272  java
+  273  apt install openjdk-8-jre-headless 
+  274  apt install openjdk-11-jre-headless
+  275  clear
+  276  java
+  277  clear
+  278  bash
+  279  exit 0
+  280  pwd
+  281  ll
+  282  cd 
+  283  ls -al
+  284  sshd
+  285  apt-get update
+  286  apt-get install virtualbox-guest-additions
+  287  apt-get install virtualbox-guest-additions-iso
+  288  apt-get install virtualbox-guest-additions.iso
+  289  clear
+  290  service ssh status
+  291  sudo apt update
+  292  sudo apt install openssh-servers
+  293  vi /etc/ssh/sshd_config 
+  294  systemctl restart ssh.services
+  295  cd
+  296  clear
+  297  sudo apt-get install openssh-server
+  298  sudo apt install sshd
+  299  sudo apt install ssh
+  300  exit0
+  301  shutdown
+  302  date
+  303  clear
+  304  cclear
+  305  clear
+  306  cd
+  307  ll
+  308  cd .ssh
+  309  hostname -i
+  310  netsatat -ano
+  311  netstat -lnpt
+  312  ifconfig
+  313  clear
+  314  cd appl
+  315  cd
+  316  ll
+  317  clear
+  318  ll
+  319  cd ./ssh
+  320  clear
+  321  ssh-keygen -t rsa
+  322  ll
+  323  cd .ssh/
+  324  ll
+  325  cat id_rsa.pub 
+  326  clear
+  327  ll
+  328  cd ..
+  329  ll
+  330  cd .ssh/
+  331  ll
+  332  vi authorized_keys
+  333  ll
+  334  ls -al
+  335  chmod 600 authorized_keys 
+  336  cd ..
+  337  ll
+  338  service sshd status
+  339  service sshd srestart
+  340  service sshd restart
+  341  service sshd status
+  342  ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQC9e8pAEyBpK1XcJBvLMesVIu/YEGX7QAj8PvopKUcT0Zwat3vB4EP1djP8xnGbeVLB+JHudr9P1lD6neqWnPSOkkPuDhFFwz0WUWeB6ZuMNQEm+2SETMK0dlVlTb3PLpws6Glx9/BdQnVX5p95OD/yiWkwm95ASGTVwStHhaglsYPkr9NE77X9zEhjU2HHHlIb0ltzXaGviuynj4NXEnJ3tbbukRqCjJkKiVJhJx5vWedFTZ/cb5Qrruro2qeMCpikm+RIG+6OTDKQne81xJCCaytqjmro/0CX15EyENt5yaZ2dvaOaalZJg//n1y4De3NmYbRBoG88haZum56ZT5x ajay@DESKTOP-F6BPE3C
+  343  ll
+  344  cd .ssh/
+  345  ll
+  346  cat id_rsa.pub 
+  347  clear
+  348  cd /etc/hosts
+  349  vi /etc/hosts
+  350  ll
+  351  vi authorized_keys 
+  352  clear
+  353  ifcofig
+  354  ifconfig
+  355  service sshd status
+  356  service sshd stop
+  357  service sshd status
+  358  service sshd staart
+  359  service sshd start
+  360  service sshd status
+  361  clear
+  362  cd .ssh/
+  363  ll
+  364  cat authorized_keys 
+  365  sudo su -ajay
+  366  sudo su - ajay
+  367  clear
+  368  pwd
+  369  ll
+  370  cd .ssh/
+  371  ll
+  372  cat id_rsa.pub
+  373  service sshd status
+  374  service sshd stop
+  375  service sshd status
+  376  service sshd start
+  377  clear
+  378  netstat -lnpt
+  379  netstat -ano
+  380  clear
+  381  echo $0
+  382  which bash
+  383  clea
+  384  clear
+  385  git init
+  386  hit status
+  387  git status
+  388  cd /opt/devops/
+  389  ll
+  390  git status
+  391  cd 
+  392  cd .ssh/
+  393  ll
+  394  mv authorized_keys authorized_keys
+  395  vi authorized_keys
+  396  ls -a
+  397  ls -al
+  398  chmod 700 authorized_keys 
+  399  ifconfig
+  400  ll
+  401  chmod 600 authorized_keys
+  402  ll
+  403  clear
+  404  cd ..
+  405  ll
+  406  service sshd stop
+  407  service sshd start
+  408  service sshd status
+  409  cd .ssh/
+  410  ll
+  411  vi authorized_keys 
+  412  service sshd stop
+  413  service sshd start
+  414  cd /etc/ssh/
+  415  ll
+  416  vi sshd_config 
+  417  vi ssh_host_rsa_key
+  418  vi ssh_host_rsa_key.pub
+  419  vi sshd_config 
+  420  service sshd stop
+  421  service sshd start
+  422  ajay
+  423  cd /var/log/
+  424  ll
+  425  ls -a
+  426  cd private/
+  427  ll
+  428  l
+  429  cd ..
+  430  ll
+  431  date
+  432  ll |sort
+  433  date
+  434  less auth.log
+  435  clea
+  436  clear
+  437  ll
+  438  rm -rf auth.log 
+  439  clear
+  440  ll
+  441  date
+  442  ll
+  443  ll |sort
+  444  date
+  445  less lastlog 
+  446  less wtmp 
+  447  cd  containers/
+  448  ll
+  449  clear
+  450  cd
+  451  clear
+  452  ${@}
+  453  clear
+  454  ll
+  455  clear
+  456  ping -c l 192.168.1.24
+  457  ping -c 192.168.1.24
+  458  ping 192.168.1.24
+  459  ping 192.168.1.24 &> /dev/null
+  460  apt-get install httpd
+  461  apt-get install -y httpd
+  462  apt-get install -y apache2
+  463  clear
+  464  hostname
+  465  10.0.2.15ajay-M | sudo tee /var/www/html/index.html >/dev/null 
+  466  echo 10.0.2.15ajay-M | sudo tee /var/www/html/index.html >/dev/null
+  467  cat /var/www/html/index.html 
+  468  systemctl start httpd
+  469  sudo systemctl start httpd
+  470  systemctl enable httpd
+  471  httpd
+  472  cd /var/www/html/
+  473  ll
+  474  cat index.html 
+  475  clear
+  476  cd
+  477  ll
+  478  ps -ef |grep httpd
+  479  apache *
+  480  apt-get install apache2-bin
+  481  find apa*
+  482  clear
+  483  find
+  484  clear
+  485  man find
+  486  find apache*
+  487  ll
+  488  cd /opt/
+  489  ll
+  490  cd ..
+  491  cd 
+  492  ll
+  493  cd /
+  494  ll
+  495  cd bin/
+  496  ll
+  497  cd ..
+  498  ll
+  499  cd etc/
+  500  ll
+  501  clear
+  502  cd ..
+  503  ll
+  504  cd usr/bin/X11/X11/X11/X11/X11/X11/X11/X11/X11/X11/X11/X11/X11/X11/X11/X11/X11/X11/X11/X11/X11/X11/X11/X11/X11/X11/X11/X11/X11/X11/X11/X11/X11/X11/X11/X11/X11/X11/X11/X11/
+  505  pwd
+  506  ll
+  507  clear
+  508  cd
+  509  clear
+  510  ll
+  511  cd .pro
+  512  cd .profile
+  513  clear
+  514  ll
+  515  cd data/
+  516  ll
+  517  apt-get install apache
+  518  apt-get install apache2
+  519  apt-get install httpd
+  520  apt-get install nginx-light
+  521  ll
+  522  cd /etc/systemd/system/
+  523  ll
+  524  ll network-online.target.wants/cd 
+  525  cd 
+  526  cd multi-user.target.wants/
+  527  pwd
+  528  cd /etc/systemd/system/multi-user.target.wants/
+  529  ll
+  530  cd /lib/systemd/system/apache2.service
+  531  vi /lib/systemd/system/apache2.service
+  532  cd
+  533  /usr/sbin/apachectl start
+  534  /usr/sbin/apachectl status
+  535  netstat -lnop
+  536  netstat -ano |grep 80
+  537  /usr/sbin/apachectl status
+  538  cd /usr/sbin/
+  539  ll
+  540  apache2
+  541  cd /etc/apache2/
+  542  ll
+  543  vi apache2.conf 
+  544  vi ports.conf 
+  545  apache2  status
+  546  /usr/sbin/apachectl status
+  547  /usr/sbin/apachectl start
+  548  systemctl status apache2
+  549  ps -ef |grep http
+  550  ps -ef |grep httpd
+  551  date
+  552  curl http://192.168.1.33
+  553  ifconfig
+  554  ping 192.168.56.1
+  555  ping 192.168.1.24
+  556  cd
+  557  clear
+  558  ping 192.168.1.24
+  559  vi /etc/hosts
+  560  ping 192.168.1.24
+  561  clear
+  562  ping 192.168.1.34
+  563  ssh 192.168.1.34
+  564  ifconfig
+  565  clear
+  566  cd /opt/devops/
+  567  ll
+  568  git init
+  569  git status
+  570  git remote add origin https://github.com/ajayg0611/Linux_cmd.git
+  571  git add *
+  572  git status
+  573  git commit -m "push ffrom ubuntu"
+  574  git push -u origin master
+  575  clear
+  576  ll
+  577  git pull origin msater
+  578  git pull origin master
+  579  cd shellscript/
+  580  ll
+  581  git pull origin msater
+  582  git remote add origin https://github.com/ajayg0611/Linux_cmd.git
+  583  git pull origin msater
+  584  git pull origin master
+  585  git status
+  586  git add *
+  587  git status
+  588  git commit -m "push ffrom ubuntu"
+  589  git push -u origin master
+  590  clear
+  591  git push -u origin master1
+  592  clear
+  593  ll
+  594  cd ..
+  595  ll
+  596  cd ..
+  597  clear
+  598  cd devops/
+  599  ll
+  600  rm -rf 
+  601  rm -rf *
+  602  clear
+  603  ll
+  604  git init
+  605  git status
+  606  git pull origin master
+  607  ll
+  608  git status
+  609  ll
+  610  clear
+  611  cd ..
+  612  rm -rf devops/
+  613  ll
+  614  clear
+  615  cd 
+  616  ll
+  617  vi .bashrc 
+  618  clear
+  619  cd data
+  620  clear
+  621  mkdir data
+  622  ll
+  623  cd data/
+  624  ll
+  625  git init
+  626  ll
+  627  git pull origin master
+  628  git remote add origin https://github.com/ajayg0611/Linux_cmd.git
+  629  git pull origin master
+  630  git status
+  631  ll
+  632  git status
+  633  tree
+  634  apt install tree
+  635  clear
+  636  ll
+  637  tree shellscript/
+  638  ls -r
+  639  ls man
+  640  man ls
+  641  ls -R
+  642  clear
+  643  ls -R
+  644  cd shellscript/
+  645  ll
+  646  vi forloop.sh 
+  647  ./forloop.sh 
+  648  ll
+  649  vi apache.sh 
+  650  vi ping.sh 
+  651  grep runevery *
+  652  vi automation.sh 
+  653  clear
+  654  cd
+  655  cd .ssh/
+  656  ll
+  657  vi authorized_keys 
+  658  clear
+  659  ll
+  660  cat authorized_keys
+  661  clear
+  662  hostname
+  663  ping
+  664  ipconfig
+  665  ifconfig
+  666  ping 192.168.1.33
+  667  clear
+  668  cd
+  669  ll
+  670  cd .ssh
+  671  clear
+  672  ll
+  673  clear
+  674  vi /etc/hosts
+  675  ping ajay1
+  676  clear
+  677  ssh root@ajay1
+  678  ssh ajay1@ajay1
+  679  clear
+  680  cd
+  681  cd .ssh/
+  682  ll
+  683  cat id_rsa.pub
+  684  clear
+  685  cd
+  686  clear
+  687  ssh root@ajay1
+  688  clear
+  689  ssh ajay1@ajay1
+  690  clear
+  691  cd /dat
+  692  clear
+  693  ll
+  694  cd data/
+  695  ll
+  696  cd shellscript/
+  697  ll
+  698  vi ping.sh 
+  699  vi SERVERS
+  700  pwd
+  701  vi ping.sh 
+  702  ./ping.sh 
+  703  vi ping.sh 
+  704  vi SERVERS
+  705  ./ping.sh 
+  706  vi SERVERS
+  707  vi ping.sh 
+  708  ./ping.sh 
+  709  vi ping.sh 
+  710  ./ping.sh 
+  711  vi ping.sh 
+  712  ./ping.sh 
+  713  vi ping.sh 
+  714  ./ping.sh 
+  715  ll
+  716  vi apache.sh 
+  717  ./apache.sh 
+  718  vi apache.sh 
+  719  ./apache.sh 
+  720  vi apache.sh 
+  721  ./apache.sh 
+  722  vi apache.sh 
+  723  ./apache.sh ajay1 ajay2
+  724  vi apache.sh 
+  725  ./apache.sh ajay1 ajay2
+  726  vi apache.sh 
+  727  ./apache.sh ajay1 ajay2
+  728  vi apache.sh 
+  729  ./apache.sh ajay1 ajay2
+  730  ll
+  731  vi apache.log 
+  732  ./apache.sh ajay1 ajay2
+  733  hostname
+  734  clear
+  735  vi automation.sh 
+  736  pwd
+  737  vi automation.sh 
+  738  ./automation.sh 
+  739  ./automation.sh -n
+  740  ./automation.sh -n SERVERS
+  741  vi automation.sh 
+  742  ./automation.sh -n SERVERS
+  743  ./automation.sh -n
+  744  ./automation.sh -n SERVERS
+  745  vi automation.sh 
+  746  ./automation.sh -s
+  747  ./automation.sh -s apache.sh
+  748  ./automation.sh -n apache.sh
+  749  ./automation.sh -n xyv
+  750  ./automation.sh -n -f
+  751  ./automation.sh -n -f aha
+  752  ./automation.sh -n aja
+  753  ./automation.sh -nv
+  754  ./automation.sh -nv aja
+  755  ./automation.sh -s ajay
+  756* 
+  757  ./automation.sh -s ajay1
+  758  ./automation.sh -v ajay1 pwd
+  759  ./automation.sh -v hostname pwd
+  760  ./automation.sh -v pwd
+  761  ./automation.sh -v ajay1-VirtualBox
+  762  ./automation.sh -v hostname ajay1-VirtualBox
+  763  clear
+  764  ll
+  765  vi pid_count 
+  766  ./pid_count ajay1 root
+  767  ./pid_count ajay1
+  768  vi pid_count 
+  769  ./pid_count root ajay1
+  770  vi pid_count 
+  771  ./pid_count root ajay2
+  772  vi pid_count 
+  773* 
+  774  cp pid_count pid_count_backup
+  775  vi pid_count_backup 
+  776  vi pid_count
+  777  ./pid_count root ajay2
+  778  ./pid_count root ajay1
+  779  ./pid_count apache2 ajay2
+  780  ./pid_count apache2 ajay1
+  781  vi pid_count
+  782  ./pid_count apache2 ajay1
+  783  ./automation.sh -v uptime
+  784  ./automation.sh -d uptime
+  785  ./automation.sh -n uptime
+  786  ./automation.sh -n uptime -f
+  787  ./automation.sh -v uptime -f servers
+  788  ./automation.sh -v uptime  servers
+  789  ./automation.sh -v uptime -f SERVERS
+  790  ./automation.sh -v uptime -f  /root/data/shellscript/SERVERS
+  791  cleat
+  792  git status
+  793  git add *]
+  794  git add *
+  795  git commit -m " updated at home 1"
+  796  git push -u origin master
+  797  clear
+  798  history > 03122019
