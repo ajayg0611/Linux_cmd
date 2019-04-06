@@ -1,0 +1,206 @@
+    1  git init
+    2  yum install git -y
+    3  clear
+    4  git init
+    5  git status
+    6  git clone https://github.com/ajayg0611/Linux_cmd.git
+    7  git pull
+    8  git pull https://github.com/ajayg0611/Linux_cmd.git master
+    9  'll
+   10  ll
+   11  mv ping.sh /opt/shellscript/
+   12  ll
+   13  cd shellscript/
+   14  ll
+   15  vi automation.sh 
+   16  chmod +x automation.sh 
+   17  ./automation.sh 
+   18  ./automation.sh f
+   19  UID
+   20  id -g
+   21  alias UID='id-g'
+   22  UID
+   23  alias UID='id -g'
+   24  UID
+   25  clear
+   26  UID
+   27  clear
+   28  git add *
+   29  git status
+   30  vi cmds_line
+   31     ./run-everywhere.sh -n hostname
+   32  ./automation.sh -n hostname
+   33  exuti
+   34  exit
+   35  clear
+   36  vi /etc/hosts
+   37  echo 172.31.28.199 machine2^C sudo tee -a /etc/hosts
+   38  cat /etc/hosts
+   39  echo 172.31.28.199 machine2 sudo tee -a /etc/hosts
+   40  cat /etc/hosts
+   41  cat 172.31.28.199 machine2 sudo tee -a /etc/hosts
+   42  echo 172.31.28.199 machine2 |sudo tee -a /etc/hosts
+   43  cat /etc/hosts
+   44  clear
+   45  ssh root@machine2 uptime
+   46  id
+   47  uname -i
+   48  clear
+   49  cd .ssh/
+   50  ll
+   51  vi authorized_keys 
+   52  ssh root@machine2 uptime
+   53  vi /opt/SERVERS
+   54  ll
+   55  ls -a
+   56  cd /opt/
+   57  ll
+   58  clear
+   59  for SERVERS in $(cat /opt/SERVERS); do  then ssh ${SERVERS} hostname
+   60  for SERVERS in $(cat /opt/SERVERS); do   ssh ${SERVERS} hostname; ssh ${SERVERS} uptime; done
+   61  ssh root@machine2 uptime; hostname
+   62  cat /etc/hosts
+   63  ping machine2
+   64  ping 172.31.28.199
+   65  ll
+   66  vi ping.sh
+   67  chmod +x ping.sh 
+   68  ./ping.sh 
+   69  clearr
+   70  clear
+   71  ping 172.31.28.199
+   72  clear
+   73  git init
+   74  bash
+   75  exit
+   76  ssh machine2
+   77  clear
+   78  ssh root@machine2 uptime; hostname
+   79  cd /opt/shellscript/
+   80  ll
+   81  clear
+   82  ./automation.sh 
+   83    ./automation.sh -v uptime
+   84    ./automation.sh -ns id
+   85    ./automation.sh -sv id
+   86    ./automation.sh -f test hostname
+   87    ./automation.sh -f /path/to/nowhere hostname
+   88    ./automation.sh -s useradd test1
+   89    ./automation.sh id test1
+   90    ./automation.sh -ns 'useradd -c "Test two" test2'
+   91  clear
+   92  vi automation.sh 
+   93    ./automation.sh -ns 'useradd -c "Test two" test2'
+   94    ./automation.sh -f test hostname
+   95    ./automation.sh -f SERVERS hostname
+   96  vi automation.sh 
+   97    ./automation.sh -v tail -2 /etc/passwd
+   98  ./automation.sh -n hostname
+   99  ssh -o ConnectTimeout=2 machine2  hostname
+  100    ./automation.sh -v uptime
+  101    ./automation.sh -ns id
+  102  ssh -o ConnectTimeout=2 machine2 sudo id
+  103    ./automation.sh -f test hostname
+  104    ./automation.sh -f /opt/SERVERS hostname
+  105    ./automation.sh -f /opt/SERVERS hostname pwd who
+  106    ./automation.sh -f /path/to/nowhere hostname
+  107    ./automation.sh -s useradd test1
+  108    ./automation.sh id test1
+  109    ./automation.sh -ns 'useradd -c "Test two" test2'
+  110  ssh -o ConnectTimeout=2 machine2 sudo useradd -c "Test two" test2
+  111  ssh -o ConnectTimeout=2 machine2 sudo useradd -D "Test two" test2
+  112    ./automation.sh id test2
+  113    ./automation.sh -v id test2
+  114    ./automation.sh -v tail -2 /etc/passwd
+  115    ./automation.sh i-like-pizza
+  116    echo $?
+  117    ./automation.sh i-like-pizza
+  118    echo $?
+  119    ./automation.sh echo i-like-pizza
+  120  vi automation.sh 
+  121  clear
+  122  alias
+  123  UID
+  124  clear
+  125     ./automation.sh -n hostname
+  126     ./automation.sh -ns hostname
+  127     ./automation.sh -s hostname
+  128  vi automation.sh 
+  129     ./automation.sh -ns hostname
+  130     ./automation.sh -s hostname
+  131  vi automation.sh 
+  132     ./automation.sh -ns hostname
+  133     ./automation.sh -n hostname
+  134    ./automation.sh -v uptime
+  135    ./automation.sh -ns id
+  136    ./automation.sh -sv id
+  137    ./automation.sh -f test hostname
+  138    ./automation.sh -f /path/to/nowhere hostname
+  139    ./automation.sh -s useradd test1
+  140    ./automation.sh id test1
+  141    echo "'Test two'"
+  142    echo '"Test two"'
+  143    ./automation.sh -ns 'useradd -c "Test two" test2'
+  144    ./automation.sh -s 'useradd -c "Test two" test2'
+  145    ./automation.sh id test2
+  146    ./automation.sh -v id test2
+  147    ./automation.sh -v tail -2 /etc/passwd
+  148    ./automation.sh i-like-pizza
+  149  vi automation
+  150  vi automation.sh 
+  151  echo ${UID}
+  152  echo ${id}
+  153  echo ${Hostname}
+  154  echo ${hostname}
+  155  echo ${UID}
+  156  exit
+  157  clear
+  158  echo ${UID}
+  159  cd /opt/shellscript/
+  160  ll
+  161  vi apache.sh
+  162  clear
+  163  ll
+  164  chmod +x apache.sh 
+  165  vi apache.sh 
+  166  ./apache.sh 
+  167  ./apache.sh machine2
+  168  vi apache.sh 
+  169  ./apache.sh machine2
+  170  ll
+  171  vi serverlogin 
+  172  vi backup_of_login 
+  173  curl www.google.com
+  174  clear
+  175  ./apache.sh machine2
+  176  curl http://172-31-28-199
+  177  curl -- request GET -vhttp://172.31.28.199
+  178  curl -- request GET -v http://172.31.28.199
+  179  curl --request GET -v http://172.31.28.199
+  180  curl http://172.31.28.199
+  181  curl --request GET -v http://172.31.28.199 |grep 200
+  182  curl --request GET -v http://172.31.28.199 |grep HTTP |grep 200
+  183  clear
+  184  curl --request GET -v http://172.31.28.199 |grep HTTP |grep 200
+  185  curl -O http://172.31.28.199
+  186  curl -o http://172.31.28.199
+  187  curl -o -ahttp://172.31.28.199
+  188  man curl
+  189  curl -o /dev/null -s -w "%{http_code}\n" http://localhost
+  190  curl -o /dev/null -s -w "%{http_code}\n" http://172.31.28.199
+  191  curl -o /dev/null -s -w "%{http_code}\n" http://172.31.28.199 ; date
+  192  clear
+  193  ps -ef |grep httpd
+  194  vi pid_count
+  195  vi pi
+  196  vi pid_count 
+  197  chmod +x pid_count 
+  198  ssh root@machine2 $(pid_count httpd)
+  199  clear
+  200  ssh root@machine2 $(pid_count httpd)
+  201  ll
+  202  vi pid_count 
+  203  ./pid_count httpd
+  204  vi pid_count 
+  205  ./pid_count httpd machine2
+  206  history > cmd_10march

@@ -1,0 +1,248 @@
+ cat test1.sh
+#!/bin/bash
+
+select=0
+
+        echo -e " Enter env name :\c "
+                                read env1
+                                `cd`
+echo "1. CSI"
+echo "2. BBO"
+echo "3. BFO"
+echo "4. GW"
+echo "5. maf"
+echo "6. ppsvc"
+echo "7. web"
+
+echo -n "Please select [ 1,2,3,4,5,6 or 7 ] : "
+
+# Loop while the variable 'select' is equal 0
+# bash while loop
+
+while [ $select -eq 0 ]; do
+
+# read user input
+read select
+if [ $select -eq 5 ]; then
+
+echo "Select from below nodes "
+                                swmcli nodegroup listnodes -ng csi.maf.$env1
+                                echo ""
+
+
+echo -e "Select Vtier : \c "
+
+read Vtier
+sudoto=`echo $Vtier|awk -F"." '{print $1}'|awk -F"-" '{print $3}'`
+echo $sudoto
+#sudo su - $sudoto
+
+ssh -t $Vtier " sudo su - $sudoto "
+
+
+else
+# bash nested if/else
+if [ $select -eq 1 ] ; then
+
+                                echo "Select from below nodes "
+                                swmcli nodegroup listnodes -ng csi.m2e.$env1
+                                echo ""
+
+echo -e "Select Vtier : \c "
+
+read Vtier
+sudoto=`echo $Vtier|awk -F"." '{print $1}'|awk -F"-" '{print $3}'`
+echo $sudoto
+#sudo su - $sudoto
+
+ssh -t $Vtier " sudo su - $sudoto "
+#hostname
+#sudo su - $user
+
+else
+
+        if [ $select -eq 2 ] ; then
+
+echo "Select from below nodes "
+                                swmcli nodegroup listnodes -ng bbo.m2e.$env1
+                                echo ""
+
+echo -e "Select Vtier : \c "
+
+read Vtier
+sudoto=`echo $Vtier|awk -F"." '{print $1}'|awk -F"-" '{print $1}'`
+echo $sudoto
+#sudo su - $sudoto
+
+ssh -t $Vtier " sudo su - $sudoto "
+
+
+        else
+
+     if [ $select -eq 3 ] ; then
+
+echo "Select from below nodes "
+                                swmcli nodegroup listnodes -ng bfo.m2e.$env1
+                                echo ""
+
+echo -e "Select Vtier : \c "
+
+read Vtier
+sudoto=`echo $Vtier|awk -F"." '{print $1}'|awk -F"-" '{print $1}'`
+echo $sudoto
+#sudo su - $sudoto
+
+ssh -t $Vtier " sudo su - $sudoto "
+
+
+                else
+
+if [ $select -eq 4 ] ; then
+
+echo "Select from below nodes "
+                                swmcli nodegroup listnodes -ng csi.gw2.$env1
+                                echo ""
+
+echo -e "Select Vtier : \c "
+read Vtier
+no=`echo ${#Vtier}`
+#echo $no
+
+if [ $no -le 27 ] ; then
+
+sudoto=`echo $Vtier|awk -F"." '{print $1}'|awk -F"-" '{print $1}'`
+echo $sudoto
+
+else
+
+#echo -e "Select no : \c "
+#read no
+#sudoto=`echo $Vtier|awk -F"." '{print $1}'|awk -F"-" '{print $'$no'}'`
+sudoto=`echo $Vtier|awk -F"." '{print $1}'|awk -F"-" '{print $3}'`
+echo $sudoto
+fi
+
+ssh -t $Vtier " sudo su - $sudoto "
+
+
+
+else
+
+if [ $select -eq 6 ] ; then
+
+echo "Select from below nodes "
+                                swmcli nodegroup listnodes -ng csi.ppsvc.$env1
+                                echo ""
+
+echo -e "Select Vtier : \c "
+
+read Vtier
+sudoto=`echo $Vtier|awk -F"." '{print $1}'|awk -F"-" '{print $3}'`
+echo $sudoto
+#sudo su - $sudoto
+
+ssh -t $Vtier " sudo su - $sudoto "
+
+
+else
+
+if [ $select -eq 7 ] ; then
+
+echo "Select from below nodes "
+                                swmcli nodegroup listnodes -ng csi.web.$env1
+                                echo ""
+
+echo -e "Select Vtier : \c "
+
+read Vtier
+sudoto=`echo $Vtier|awk -F"." '{print $1}'|awk -F"-" '{print $3}'`
+echo $sudoto
+#sudo su - $sudoto
+
+ssh -t $Vtier " sudo su - $sudoto "
+
+
+else
+                echo -e "\n Enter Value less than or eqaul to 7 \n \n"
+                        echo "Please select between 1-7 !"
+
+echo "1. CSI"
+echo "2. BBO"
+echo "3. BFO"
+echo "4. GW"
+echo "5. maf"
+echo "6. ppsvc"
+echo "7. web"
+
+echo -n "Please select [ 1,2,3,4,5,6 or 7 ] : "
+
+select=0
+                fi
+        fi
+fi
+fi
+fi
+fi
+fi
+done
+[ag3645@zltv0786 ~]$
+[ag3645@zltv0786 ~]$ cat t2.sh
+echo -e "eneter env name: \c "
+read env1
+
+echo "Select from below nodes "
+                                swmcli nodegroup listnodes -ng csi.gw2.$env1
+                                echo ""
+
+echo -e "Select Vtier : \c "
+read Vtier
+no=`echo ${#Vtier}`
+#echo $no
+
+if [ $no -le 27 ] ; then
+
+echo "Select from below nodes "
+sudoto=`echo $Vtier|awk -F"." '{print $1}'|awk -F"-" '{print $1}'`
+echo $sudoto
+
+else
+
+#echo -e "Select no : \c "
+#read no
+#sudoto=`echo $Vtier|awk -F"." '{print $1}'|awk -F"-" '{print $'$no'}'`
+sudoto=`echo $Vtier|awk -F"." '{print $1}'|awk -F"-" '{print $3}'`
+echo $sudoto
+#sudo su - $sudoto
+#ssh -t $Vtier " sudo su - $sudoto "
+fi
+
+[ag3645@zltv0786 ~]$ cat ssh.sh
+#echo -e "Select Vtier : \c "
+
+#read Vtier
+#sudoto=`echo $Vtier|awk -F"." '{print $1}'|awk -F"-" '{print $3}'`
+#echo $sudoto
+#sudo su - $sudoto
+
+
+
+echo -e "Select Vtier : \c "
+
+read Vtier
+sudoto=`echo $Vtier|awk -F"." '{print $1}'|awk -F"-" '{print $3}'`
+echo $sudoto
+sudo su - $sudoto > t2.sh
+ssh -t $Vtier " sudo su - $sudoto ; hostname "
+
+#ssh  $Vtier
+
+#<< EOF
+
+ls -la
+
+#ssh -t $Vtier " sudo su - $sudoto "
+ls
+hostname
+
+
+[

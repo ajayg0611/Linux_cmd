@@ -1,0 +1,19 @@
+--------------------Script Testing-------------------------------
+ 
+   ./run-everywhere.sh -n hostname
+  ./run-everywhere.sh -v uptime
+  ./run-everywhere.sh -ns id
+  ./run-everywhere.sh -sv id
+  ./run-everywhere.sh -f test hostname
+  ./run-everywhere.sh -f /path/to/nowhere hostname
+  ./run-everywhere.sh -s useradd test1
+  ./run-everywhere.sh id test1
+  echo "'Test two'"
+  echo '"Test two"'
+  ./run-everywhere.sh -ns 'useradd -c "Test two" test2'
+  ./run-everywhere.sh -s 'useradd -c "Test two" test2'
+  ./run-everywhere.sh id test2
+  ./run-everywhere.sh -v id test2
+  ./run-everywhere.sh -v tail -2 /etc/passwd
+  ./run-everywhere.sh i-like-pizza
+  echo $?

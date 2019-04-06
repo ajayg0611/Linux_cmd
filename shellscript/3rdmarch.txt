@@ -1,0 +1,546 @@
+    1  bash
+    2  sudo
+    3  sudo -l
+    4  sudo su - ec2-user
+    5  pwd
+    6  ll
+    7  cd devops/
+    8  ll
+    9  cd /opt/devops/
+   10  ll
+   11  cd dh
+   12  cd shellscript/
+   13  ll
+   14  pwd
+   15  ll
+   16  clear
+   17  pwd
+   18  mkdir ajay
+   19  cd ajay
+   20  pwd
+   21  ll
+   22  vi test.sh
+   23  ll
+   24  chmod +x test.sh 
+   25  ll
+   26  ./test.sh 
+   27  cd ~
+   28  pwd
+   29  ll
+   30  cd
+   31  yum install git -y
+   32  clear
+   33  ppwd
+   34  pwd
+   35  mkdir devops
+   36  ll
+   37  cd devops/
+   38  cd /opt/
+   39  ll
+   40  mkdir devops
+   41  ll
+   42  cd devops/
+   43  git init
+   44  git status
+   45  history > cmd.txt
+   46  ll
+   47  less cmd.txt 
+   48  git add cmd.txt 
+   49  git status
+   50  git commit -m"my first commit"
+   51  git remote add origin https://github.com/ajayg0611/Linux_cmd.git
+   52  git push -u origin master
+   53  mkdir shellscript
+   54  ll
+   55  clear
+   56  ll
+   57  cd shellscript/
+   58  ll
+   59  vi tardemo.sh
+   60  pwd
+   61  cd
+   62  ll
+   63  cd -
+   64  ll
+   65  chmod +x tardemo.sh 
+   66  ll
+   67  ./tardemo.sh 
+   68  ll
+   69  vi tardemo.sh
+   70  cd 
+   71  ll
+   72  cd /root/
+   73  ll
+   74  tar -czf ajay.tar *
+   75  ll
+   76  cd
+   77  ll
+   78  cd ..
+   79  ll
+   80  cd
+   81  ll
+   82  cd devops/
+   83  ll
+   84  git status
+   85  ll
+   86  pwd
+   87  cd ..
+   88  ll
+   89  git status
+   90  cd devops/
+   91  ll
+   92  l
+   93  ll
+   94  cd aj
+   95  cd ../ajay
+   96  ll
+   97  vi test.sh 
+   98  cd 
+   99  ll
+  100  cd /opt/
+  101  ll
+  102  cd devops/
+  103  ll
+  104  git status
+  105  ll
+  106  cd shellscript/
+  107  ll
+  108  git status
+  109  history >cmd1.txt
+  110  git add cmd1.txt 
+  111  git status
+  112  gi commit -m"my Second commit"
+  113  git commit -m"my Second commit"
+  114  git push -u origin master
+  115  clear
+  116  ll
+  117  tar -tvf homedirbackup_20190302.tar.gzhomedirbackup_20190302.tar.gz
+  118  tar -tvf homedirbackup_20190302.tar.gz
+  119  tar -xvf homedirbackup_20190302.tar.gz
+  120  ll
+  121  cd root/
+  122  ll
+  123  cd .
+  124  cd -
+  125  clear
+  126  ll
+  127  cd /opt/devops/shellscript/
+  128  pwd
+  129  ll
+  130  git  clone https://github.com/ajayg0611/Linux_cmd.git
+  131  ll
+  132  pwd
+  133  cd ..
+  134  l
+  135  ll
+  136  cd shellscript/
+  137  ll
+  138  rm -rf devops/
+  139  clear
+  140  ll
+  141  cd /opt/devops/
+  142  cd shellscript/
+  143  ll
+  144  svn add arg_passing.sh 
+  145  git add arg_passing.sh 
+  146  git status
+  147  git commit -m"my 4th commit"
+  148  git push -u origin master
+  149  clear
+  150  h
+  151  clear
+  152  cd /opt/devops/shellscript/
+  153  ll
+  154  vi functiondemo.sh
+  155  ll
+  156  ./functiondemo.sh
+  157  chmod +x functiondemo.sh
+  158  ./functiondemo.sh
+  159  cat functiondemo.shfunctiondemo.sh
+  160  cat functiondemo.sh
+  161  ls $?
+  162  ls
+  163  ls $?
+  164  echo $?
+  165  ll
+  166  vi argument_passing.sh
+  167  ll
+  168  chmod +x argument_passing.sh
+  169  cat argument_passing.sh
+  170  ./
+  171  ./argument_passing.sh hello
+  172  vi argument_passing.sh
+  173  ./argument_passing.sh hello
+  174  ./argument_passing.sh
+  175  pwd
+  176  ll
+  177  vi argument_passing.sh
+  178  ./argument_passing.sh
+  179  vi functiondemo.sh 
+  180  ./functiondemo.sh 
+  181  id
+  182  clear
+  183  ll
+  184  git status
+  185  git add argument_passing.sh functiondemo.sh
+  186  git status
+  187  git commit -m"my 3rd commit"
+  188  git push -u origin master
+  189  clear
+  190  ll
+  191  vi arg_passing.sh
+  192  ll
+  193  ./arg_passing.sh
+  194  chmod +x arg_passing.sh 
+  195  ./arg_passing.sh
+  196  ./arg_passing.sh linux
+  197  git status
+  198  pwd
+  199  ll
+  200  cd /opt/devops/
+  201  ll
+  202  cd shellscript/
+  203  ll
+  204  tar -tvf homedirbackup_20190302.tar.gz
+  205  tar -tzf homedirbackup_20190302.tar.gz
+  206  tar -tzf homedirbackup_20190302.tar.gz |count
+  207  tar -tzf homedirbackup_20190302.tar.gz |count -l
+  208  count
+  209  count -l
+  210  ps -ef |count -l
+  211  man count
+  212  count
+  213  clear
+  214  ll
+  215  count
+  216  wc
+  217  wc -l
+  218  who | wc -l
+  219  clear
+  220  tar -tzf homedirbackup_20190302.tar.gz |wc -l
+  221  tar -tvf homedirbackup_20190302.tar.gz | wc -l
+  222  pwd
+  223  ll
+  224  ls -al
+  225  cd ,sh
+  226  clear
+  227  cd .ssh/
+  228  ll
+  229  cd ..
+  230  pwd
+  231  cd
+  232  ssh-keygen -t rsa
+  233  ll
+  234  ssh-keygen -t rsa
+  235  ll
+  236  cd
+  237  id
+  238  ls -al
+  239  cd .ssh
+  240  ls -al
+  241  cat id_rsa.pub
+  242  clear
+  243  ll
+  244  cat id_rsa.pub 
+  245  ssh 3.16.38.95\
+  246  ssh 3.16.38.95
+  247  clear
+  248  pwd
+  249  ls -al
+  250  cd .ssh
+  251  ll
+  252  clear
+  253  ssh-keygen -t rsa
+  254  ll
+  255  date
+  256  cat id_rsa.pub
+  257  ssh 18.220.41.130
+  258  ping 18.220.41.130
+  259  clear
+  260  ping 18.220.41.130
+  261  ssh 18.220.41.130
+  262  clear
+  263  cd
+  264  clear
+  265  cd /opt/
+  266  ll
+  267  cd devops/
+  268  ll
+  269  cd shellscript/
+  270  ll
+  271  cat arg_passing.sh 
+  272  exit
+  273  sudo su -
+  274  exit
+  275  ll
+  276  cd /opt/devops/shellscript/
+  277  ll
+  278  vi read_function.sh 
+  279  ./read_function.sh 
+  280  vi read_function.sh 
+  281  ./read_function.sh 
+  282  vi read_function.sh 
+  283  ./read_function.sh 
+  284  vi read_function.sh 
+  285  ./read_function.sh 
+  286  clear
+  287  ll
+  288  id
+  289  vi read.sh
+  290  ll
+  291  dates > test.txt
+  292  dates &> test.txt
+  293  ll
+  294  vi test.txt 
+  295  clear
+  296  ll
+  297  rm -rf test.txt 
+  298  clear
+  299  ll
+  300  vi redirect.sh
+  301  l
+  302  ll
+  303  chmod +x read.sh
+  304  chmod +x redirect.sh 
+  305  ll
+  306  ./redirect.sh 
+  307  vi redirect.sh 
+  308  ./redirect.sh 
+  309  vi redirect.sh 
+  310  ll
+  311  cat outfile.txt 
+  312  # stdout from bash script to stderr
+  313       echo "Hello! Big Data @ Bash" 1>&2 
+  314       # stderr from bash script to /dev/null
+  315       # Note that there's no command called 'dates'
+  316       dates 2>&1  // This will display errors
+  317       dates 2>/dev/null // This will not display errors
+  318       # stderr and stdout to file
+  319       dates &> outfile.txt
+  320  clear
+  321  ll
+  322  id
+  323  clear
+  324  ll
+  325  id
+  326  uname -i
+  327  uname -u
+  328  man uname
+  329  id
+  330  man id
+  331  clear
+  332  id -u
+  333  alias
+  334  alias id='id -u'
+  335  id
+  336  clear
+  337  alias -e
+  338  clear
+  339  id -a
+  340  clear
+  341  ll
+  342  vi function.sh
+  343  ll
+  344  chmod +x function
+  345  chmod +x function.sh 
+  346  ll
+  347  ./function.sh 
+  348  ./function.sh 2
+  349  ./function.sh 1
+  350  vi function.sh
+  351  ./function.sh 1
+  352  vi function.sh
+  353  ./function.sh 1
+  354  vi function.sh
+  355  ./function.sh 1
+  356  ./function.sh
+  357  vi function.sh
+  358  ./function.sh
+  359  clear
+  360  ./function.sh
+  361  vi function.sh
+  362  ./function.sh
+  363  vlear
+  364  ll
+  365  vi check.sh
+  366  cat check.sh 
+  367  chomd +x check.sh 
+  368  chmod +x check.sh 
+  369  ./check.sh /opt/devops/shellscript/cmd1.txt
+  370  ./check.sh /opt/devops/shellscript
+  371  ll
+  372  vi function.sh 
+  373  ./function.sh 
+  374  ll
+  375  vi function.sh 
+  376  ./function.sh 
+  377  vi function.sh 
+  378  id
+  379  vi function.sh 
+  380  ./function.sh 
+  381  vi function.sh 
+  382  ./function.sh 
+  383  vi function.sh 
+  384  ./function.sh 
+  385  vi function.sh 
+  386  ./function.sh 
+  387  vi function.sh 
+  388  ./function.sh 
+  389  vi function.sh 
+  390  ./function.sh 
+  391  clear
+  392  ll
+  393  vi case.sh
+  394  ll
+  395  chmod +x case.sh 
+  396  ./case.sh 
+  397  ./case.sh 1
+  398  ./case.sh 2
+  399  ll
+  400  vi case.sh 
+  401  ./case.sh 2
+  402  ll
+  403  vi case.sh 
+  404  ll
+  405  ./case.sh 2
+  406  vi case.sh 
+  407  ./case.sh 2
+  408  clear
+  409  vi case.sh 
+  410  ./case.sh
+  411  clerr
+  412  clear
+  413  vi case.sh 
+  414  ./case.sh
+  415  vi case.sh 
+  416  ./case.sh
+  417  vi case.sh 
+  418  ./case.sh
+  419  vi case.sh 
+  420  ./case.sh
+  421  clear
+  422  ll
+  423  vi case.sh 
+  424  clear
+  425  ll
+  426  vi file.txt
+  427  vi forloop.sh
+  428  ll
+  429  chmod +x forloop.sh 
+  430  ./forloop.sh 
+  431  clear
+  432  cd ..
+  433  ll
+  434  svn add *
+  435  git clone https://github.com/ajayg0611/Linux_cmd.git
+  436  git status
+  437  git add *
+  438  git status
+  439  git commit -m "My shell scripts"
+  440  git status
+  441  git push -u origin master
+  442  clear
+  443  ll
+  444  git status
+  445  git add *
+  446  git status
+  447  clear
+  448  ll
+  449  cd shellscript/
+  450  ll
+  451  ./forloop.sh 
+  452  vi forloop.sh 
+  453  ./forloop.sh 
+  454  "q!
+  455  ./forloop.sh 
+  456  vi forloop.sh 
+  457  ./forloop.sh 
+  458  vi forloop.sh 
+  459  ./forloop.sh 
+  460  clear
+  461  vi cstyleloop.sh
+  462  ll
+  463  chmod +x cstyleloop.sh 
+  464  ll
+  465  ./cstyleloop.sh 
+  466  cat cstyleloop.sh 
+  467  clear
+  468  ll
+  469  vi whileloop.sh
+  470  chmod +x whileloop.sh 
+  471  ./whileloop.sh 
+  472  vi example.sh
+  473  chmod +x example.sh 
+  474  cat example.sh 
+  475  vi example.sh 
+  476  ./example.sh 
+  477  vi example.sh 
+  478  ./example.sh 
+  479  vi example.sh 
+  480  ./example.sh 
+  481  clear
+  482  vi example.sh 
+  483  ./example.sh 
+  484  vi example.sh 
+  485  ./example.sh 
+  486  vi example.sh 
+  487  ./example.sh 
+  488  vi example.sh 
+  489  ./example.sh 
+  490  clear
+  491  vi example.sh 
+  492  ./example.sh 
+  493  vi example.sh 
+  494  ./example.sh 
+  495  clear
+  496  vi example.sh 
+  497  ./example.sh 
+  498  vi example.sh 
+  499  ./example.sh 
+  500  clear
+  501  cat example.sh 
+  502  clear
+  503  cat example.sh 
+  504  vi example.sh 
+  505  ./example.sh 
+  506  vi example.sh 
+  507  ./example.sh 
+  508  clear
+  509  ./example.sh 
+  510  clear
+  511  cd ..
+  512  git add *
+  513  git status
+  514  git commit -m "Shell scripts 1"
+  515  git status
+  516  git push -u origin master
+  517  clear
+  518  cd shellscript/
+  519  ll
+  520  vi csv.txt
+  521  python3-csvkit
+  522  yum install python3-csvkit -y
+  523  python3-csvkit
+  524  clear
+  525  ll
+  526  yum install python3-csvkit -y
+  527  csvlook
+  528  head csv.txt 
+  529  head -n 25 csv.txt 
+  530  clear
+  531  head csv.txt | csvlook
+  532  grep -i "collage" csv.txt 
+  533  grep -i "college" csv.txt 
+  534  wc -l csv.txt 
+  535  wc -l 
+  536  wc -l csv.txt 
+  537  clear
+  538  grep -i college |wc -l
+  539  grep -i college csv.txt |wc -l
+  540  csvkit
+  541  yum install csvkit -y
+  542  clear
+  543  ll
+  544  vi file.txt 
+  545  clear
+  546  history > 3rdmarch.txt
