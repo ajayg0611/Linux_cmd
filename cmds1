@@ -1,0 +1,486 @@
+    1  clear
+    2  cd /etc/
+    3  ls -a
+    4  cd yum.repos.d/
+    5  ll
+    6  clear
+    7  ll
+    8  vi ansible.repo
+    9  ll
+   10  yum update
+   11  yum update -y
+   12  pwd
+   13  ll
+   14  pwd
+   15  vi ansible.repo 
+   16  yum update
+   17  rpm -Uvh https://dl.fedoraproject.org/pub/epel/epel-release-latest-7.noarch.rpm
+   18  yum -y install ansible
+   19  ansible --version
+   20  pwd
+   21  cd ~/.ssh/
+   22  ll
+   23  ssh-keygen -t rsa
+   24  ll
+   25  vi id_rsa.pub
+   26  cat id_rsa.pub
+   27  cd -
+   28  ssh 18.218.29.200
+   29  clear
+   30  ll
+   31  vi /etc/ansible/hosts 
+   32  cd ~/.ssh/
+   33  vi server1.pem
+   34  pwd
+   35  ll
+   36  cd -
+   37  ll
+   38  vi /etc/ansible/hosts 
+   39  ssh 18.218.29.200
+   40  vi /etc/ansible/hosts 
+   41  tail -5f /etc/ansible/hosts 
+   42  ansible servers -m raw "uptime"
+   43  ansible servers -m raw"uptime"
+   44  cd ~/.ssh/
+   45  ll
+   46  chmod 644 server1.pem 
+   47  cd -
+   48  ansible servers -m raw"uptime"
+   49  chmod 600 ~/.ssh/server1.pem 
+   50  ansible servers -m raw"uptime"
+   51  ansible servers -m raw"date"
+   52  ansible servers -m raw "uptime"
+   53  ansible servers -m raw -a "uptime"
+   54  ansible servers -m raw -a "uptime" "date" "id"
+   55  ansible servers -m raw -a "uptime" -a "date" -a "id"
+   56  ansible servers -m raw -a "uptime date "
+   57  ansible servers -m raw -a "uptime" -B "date"
+   58  ansible servers -m raw -a "uptime" -b "date"
+   59  ansible servers -m raw -a "uptime"
+   60  ansible servers
+   61  ansible servers -m raw -a "yum update -y"
+   62  ansible servers -- sudo -m raw -a "yum update -y"
+   63  ansible servers --sudo -m raw -a "yum update -y"
+   64  clear
+   65  mkdir -p /opt/ansible-demo && cd /opt/ansible-demo
+   66  pwd
+   67  vi install_http.yml
+   68  ansible-playbook install_http.yml -vv
+   69  vi install_http.yml
+   70  cat install_http.yml 
+   71  ansible-playbook install_http.yml -vv
+   72  vi install_http.yml
+   73  ansible-playbook install_http.yml -vv
+   74  vi install_http.yml
+   75  ansible-playbook install_http.yml -vv
+   76  vi install_http.yml
+   77  ansible-playbook install_http.yml -vv
+   78  vi install_http.yml
+   79  ansible-playbook install_http.yml -vv
+   80  vi install_http.yml
+   81  ansible-playbook install_http.yml -vv
+   82  vi install_http.yml
+   83  ld -lgtr
+   84  ls -ltr
+   85  vi install_http.yml
+   86  cat install_http.yml 
+   87  ansible-playbook install_http.yml -vv
+   88  cat install_http.yml 
+   89  vi install_http.yml
+   90  ansible-playbook install_http.yml -vv
+   91  cat install_http.yml 
+   92  vi install_http.yml
+   93  clear
+   94  vi install_http.yml
+   95  ansible-playbook install_http.yml -vv
+   96  cat install_http.yml 
+   97  vi install_http.yml
+   98  cat install_http.yml 
+   99  ansible-playbook install_http.yml
+  100  clear
+  101  vi install_http.yml
+  102  ansible-playbook install_http.yml
+  103  vi install_http.yml
+  104  ansible-playbook install_http.yml
+  105  vi install_http.yml
+  106  ansible-playbook install_http.yml
+  107  cat install_http.yml 
+  108  vi install_http.yml
+  109  clear
+  110  ll
+  111  git
+  112  git clone
+  113  yum install git
+  114  git clone
+  115  git clone https://github.com/ajayg0611/Linux_cmd.git
+  116  clear
+  117  ll
+  118  git add *
+  119  ll
+  120  git add 
+  121  cd Linux_cmd/
+  122  git add 
+  123  git add *
+  124  cd ..
+  125  clear
+  126  ll
+  127  git add
+  128  git init
+  129  git add
+  130  git add *
+  131  git status
+  132  vi passwordlessDemo.yml
+  133  git add *
+  134  ansible-playbook passwordlessDemo.yml 
+  135  vi passwordlessDemo.yml
+  136  ansible-playbook passwordlessDemo.yml 
+  137  cat passwordlessDemo.
+  138  cat passwordlessDemo.yml 
+  139  git status
+  140  git commit -m " ansible"
+  141  git status
+  142  git push https://github.com/ajayg0611/Linux_cmd.git master
+  143  git pull
+  144  git pull https://github.com/ajayg0611/Linux_cmd.git
+  145  ll
+  146  git push https://github.com/ajayg0611/Linux_cmd.git master
+  147  git pull
+  148  ll
+  149  git status
+  150  git add *
+  151  git status
+  152  git commit -m " ansible1"
+  153  git push https://github.com/ajayg0611/Linux_cmd.git master
+  154  clear
+  155  ll
+  156  clear
+  157  cd /opt/ansible-demo/
+  158  ll
+  159  vi install_http.yml
+  160  vi /etc/ansible/hosts 
+  161  clear
+  162  cd /opt/ansible-demo/
+  163  ll
+  164  vi install_http1.yml
+  165  vi web_vars.yml
+  166  vi /etc/ansible/hosts 
+  167  ansible-playbook install_http1.yml 
+  168  vi install_http1.yml
+  169  vim install_http1.yml 
+  170  yum update
+  171  yum install vim
+  172  clear
+  173  ll
+  174  vi install_http1.yml 
+  175  vim install_http1.yml 
+  176  ansible-playbook install_http1.yml 
+  177  vi web_vars.yml 
+  178  ansible-playbook install_http1.yml 
+  179  vi web_vars.yml 
+  180  ansible-playbook install_http1.yml 
+  181  vim install_http1.yml 
+  182  ansible-playbook install_http1.yml 
+  183  vim install_http1.yml 
+  184  ansible-playbook install_http1.yml 
+  185  vi /etc/ansible/hosts 
+  186  vim install_http1.yml 
+  187  ansible-playbook install_http1.yml 
+  188  vi web_vars.yml 
+  189  ansible-playbook install_http1.yml 
+  190  ll
+  191  clear
+  192  vim install_http1.yml 
+  193  ansible-playbook install_http1.yml 
+  194  vim install_http1.yml 
+  195  ansible-playbook install_http1.yml 
+  196  vim install_http1.yml 
+  197  ansible-playbook install_http1.yml 
+  198  vim install_http1.yml 
+  199  ansible-playbook install_http1.yml 
+  200  vim install_http1.yml 
+  201  ansible-playbook install_http1.yml 
+  202  vim install_http1.yml 
+  203  ansible-playbook install_http1.yml 
+  204  vim install_http1.yml 
+  205  ansible-playbook install_http1.yml 
+  206  q!
+  207  vim install_http1.yml 
+  208  ansible-playbook install_http1.yml 
+  209  vim install_http1.yml 
+  210  ansible-playbook install_http1.yml 
+  211  vim install_http1.yml 
+  212  ansible-playbook install_http1.yml 
+  213  q!
+  214  vim install_http1.yml 
+  215  ansible-playbook install_http1.yml 
+  216  vim install_http1.yml 
+  217  ansible-playbook install_http1.yml 
+  218  vim install_http1.yml 
+  219  ansible-playbook install_http1.yml 
+  220  cat install_http1.
+  221  cat install_http1.yml 
+  222  vim install_http1.yml 
+  223  ll
+  224  git init
+  225  git clone https://github.com/ajayg0611/Linux_cmd.git
+  226  git status
+  227  git add *
+  228  git commit -m "Ansible 13th april"
+  229  git status
+  230  git push https://github.com/ajayg0611/Linux_cmd.git master
+  231  git status
+  232  git add *
+  233  git status
+  234  clear
+  235  ll
+  236  clear
+  237  ll
+  238  mkdir ngnx_demo
+  239  cd ngnx_demo/
+  240  ll
+  241  pwd
+  242  cd ../
+  243  vi install_http1.yml
+  244  ansible-playbook install_http1.yml 
+  245  vi install_http1.yml
+  246  ansible-playbook install_http1.yml 
+  247  clear
+  248  ll
+  249  mv ngnx_demon nginx_demo
+  250  ll
+  251  rm -rf ngnx_demo/
+  252  mkdir nginx_demo
+  253  cd nginx_demo/
+  254  clear
+  255  pwd
+  256  cd
+  257  cd .ssh/
+  258  ll
+  259  cat id_rsa.pub
+  260  vi id_rsa.pub
+  261  cd /opt/ansible-demo/nginx_demo/
+  262  ll
+  263  mkdir config
+  264  ll
+  265  vi install_nginx.yml
+  266  ansible-playbook install_nginx.yml 
+  267  vi install_nginx.yml
+  268  ansible-playbook install_nginx.yml 
+  269  vi install_nginx.yml
+  270  ansible-playbook install_nginx.yml 
+  271  wq
+  272  wQ
+  273  vi install_nginx.yml
+  274  ansible-playbook install_nginx.yml 
+  275  vi install_nginx.yml
+  276  ansible-playbook install_nginx.yml 
+  277  vi install_nginx.yml
+  278  ansible-playbook install_nginx.yml 
+  279  vi install_nginx.yml
+  280  ansible-playbook install_nginx.yml 
+  281  q!
+  282  vi install_nginx.yml
+  283  ansible-playbook install_nginx.yml 
+  284  vi install_nginx.yml
+  285  ansible-playbook install_nginx.yml 
+  286  vi install_nginx.yml
+  287  ansible-playbook install_nginx.yml 
+  288  ll
+  289  vi install_nginx.sh
+  290  ansible-playbook install_nginx.yml 
+  291  cd ~/.ssh/
+  292  ll
+  293  vi authorized_keys 
+  294  cat authorized_keys 
+  295  clear
+  296  cd -
+  297  pwd
+  298  ll
+  299  pwd
+  300  cd config/
+  301  pwd
+  302  ll
+  303  cd ..
+  304  ll
+  305  ansible-playbook install_nginx.yml 
+  306  ansible-playbook install_nginx.yml -vv
+  307  vi install_nginx.sh
+  308  vi install_nginx.yml
+  309  ansible-playbook install_nginx.yml -vv
+  310  vi install_nginx.yml
+  311  ansible-playbook install_nginx.yml -vv
+  312  vi install_nginx.yml
+  313  cd config/
+  314  ll
+  315  vi nginx.conf 
+  316  cd ..
+  317  ll
+  318  ansible-playbook install_nginx.yml -vv
+  319  ansible-playbook install_nginx.yml
+  320  vi install_nginx.yml
+  321  ansible-playbook install_nginx.yml
+  322  vi install_nginx.yml
+  323  ansible-playbook install_nginx.yml
+  324  vi install_nginx.yml
+  325  ansible-playbook install_nginx.yml
+  326  cd config/
+  327  vi index.html 
+  328  cd ..
+  329  ansible-playbook install_nginx.yml
+  330  vi index.html 
+  331  vi install_nginx.yml
+  332  ansible-playbook install_nginx.yml
+  333  vi install_nginx.yml
+  334  ansible-playbook install_nginx.yml
+  335  vi install_nginx.yml
+  336  ansible-playbook install_nginx.yml
+  337  vi install_nginx.yml
+  338  ansible-playbook install_nginx.yml
+  339  pwd
+  340  cd ..
+  341  git add *
+  342  git status
+  343  git commit -m "Ansible part 2"
+  344  git push https://github.com/ajayg0611/Linux_cmd.git master
+  345  clear
+  346  ll
+  347  cd nginx_demo/
+  348  ll
+  349  vi install_nginx.
+  350  vi install_nginx.sh 
+  351  clear
+  352  h
+  353  clear
+  354  cd /opt/ansible-demo/
+  355  ll
+  356  yum update
+  357  yum install boto3
+  358  yum install boto
+  359  pip install boto3
+  360  yum install pip
+  361  yum install pip3
+  362  clear
+  363  pip install --upgrade pip
+  364  pip install boto boto3
+  365  sudo yum install wget
+  366  wget https://bootstrap.pypa.io/get-pip.py
+  367  sudo yum install gcc libffi-devel python-devel openssl-
+  368  sudo yum install gcc libffi-devel python-devel openssl-devel
+  369  sudo python get-pip.py
+  370  sudo pip install boto
+  371  clear
+  372  vi aws_Ec2.yml
+  373  ansible-playbook aws_Ec2.yml 
+  374  vi aws_Ec2.yml
+  375  less /etc/ansible/hosts 
+  376  !
+  377  vi aws_Ec2.yml
+  378  ansible-playbook aws_Ec2.yml 
+  379  vi aws_Ec2.yml
+  380  ansible-playbook aws_Ec2.yml 
+  381  vi aws_Ec2.yml
+  382  pwd
+  383  vi pk-key
+  384  ansible-playbook aws_Ec2.yml 
+  385  pwd
+  386  vi aws_Ec2.yml
+  387  ansible-playbook aws_Ec2.yml 
+  388  vi aws_Ec2.yml
+  389* 
+  390  vi aws_Ec2.yml
+  391  ansible-playbook aws_Ec2.yml 
+  392  vi aws_Ec2.yml
+  393  less /etc/ansible/hosts 
+  394  !
+  395  clear
+  396  h
+  397  git pull https://github.com/maheshkharwadkar/devops/blob/master/ansible/firstplaybook/roles/tomcat/tasks/install_packages.yml
+  398  git pull https://github.com/maheshkharwadkar/devops/blob/master/ansible/
+  399  git pull https://github.com/maheshkharwadkar/devops/blob/master/ansible/firstplaybook
+  400  clear
+  401  git clone https://github.com/maheshkharwadkar/devops.git
+  402  ll
+  403  vi aws_Ec2.yml
+  404  git clone https://github.com/ajayg0611/Linux_cmd.git
+  405  git status
+  406  git add *
+  407  git status
+  408  git commit -m "[added mahes git"
+  409  git push https://github.com/ajayg0611/Linux_cmd.git master
+  410  clear
+  411  ll
+  412  cd devops/
+  413  ll
+  414  cd ansible/
+  415  ll
+  416  cd e2eproject/
+  417  pwd
+  418  ll
+  419  vi deploy.yml 
+  420  cd roles/
+  421  ll
+  422  cd tomcat_aws/
+  423  ll
+  424  cd defaults/
+  425  ll
+  426  vi main.yml 
+  427  cd ..
+  428  cd tasks/
+  429  ll
+  430  vi main.yml 
+  431  vi aws-ec2.yml 
+  432  cd ../defaults/
+  433  ll
+  434  vi main.yml 
+  435  cd ..
+  436  ll
+  437  cd ..
+  438  ll
+  439  ansible-playbook deploy.yml
+  440  pwd
+  441  ll
+  442  cd roles/tomcat/tasks/
+  443  ll
+  444  vi install_packages.yml 
+  445  vi configure_tomcat.yml 
+  446  vi vi main.yml 
+  447  vi main.yml 
+  448  cd ..
+  449  ll
+  450  cd ll
+  451  cd ..
+  452  ll
+  453  vi deploy.yml 
+  454  ansible-playbook deploy.yml
+  455  clear
+  456  pwd
+  457  clear
+  458  pwd
+  459  ll
+  460  vi deploy.yml 
+  461  ansible-playbook deploy.yml 
+  462  vi deploy.yml 
+  463  vim deploy.yml 
+  464  ansible-playbook deploy.yml 
+  465  vim deploy.yml 
+  466  ll
+  467  cd roles/
+  468  ll
+  469  cd tomcat
+  470  ll
+  471  cd tasks/
+  472  ll
+  473  vi configure_tomcat.yml 
+  474  vi main.yml 
+  475  vi create_users.yml 
+  476  cd ..
+  477  ll
+  478  cd ../tomcat_aws/
+  479  ll
+  480  cd tasks/
+  481  ll
+  482  vi aws-ec2.yml 
+  483  cd /opt/ansible-demo/
+  484  ll
+  485  vi web_vars.yml 
+  486  history > cmds1
