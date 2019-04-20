@@ -1,0 +1,8 @@
+---
+- name: custome role 
+  hosts: localhost
+  connection: local
+  roles:
+    - customrole
+           
+
